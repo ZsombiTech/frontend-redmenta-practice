@@ -13,12 +13,12 @@ function App() {
   const [gansw, setGansw] = useState<number>(0);
 
   useEffect(() => {
-    axios.get("http://frozen-hamlet-99845.herokuapp.com/token").then((res) => {
+    axios.get("https://frozen-hamlet-99845.herokuapp.com/token").then((res) => {
       const data = res.data;
       setToken(data[0]);
     });
 
-    axios.get("http://frozen-hamlet-99845.herokuapp.com/tasks").then((res) => {
+    axios.get("https://frozen-hamlet-99845.herokuapp.com/tasks").then((res) => {
       const data: Array<string> = res.data;
       setDatas(data);
     });
