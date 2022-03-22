@@ -23,7 +23,6 @@ function Options(props: any) {
   function increasegansw() {
     if (data == "good") {
       props.setGansw((prev: number) => prev + 1);
-      console.log(props.gansw);
     }
   }
   useEffect(() => {
