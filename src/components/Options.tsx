@@ -10,6 +10,7 @@ function Options(props: any) {
   const [absolute, setAbsolute] = useState<number>();
 
   const options: any = JSON.parse(props.data.options);
+
   const config = {
     headers: { Authorization: props.token },
   };
