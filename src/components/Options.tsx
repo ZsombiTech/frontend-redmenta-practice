@@ -29,7 +29,7 @@ function Options(props: any) {
     if (props.submitted) {
       axios
         .post(
-          `http://frozen-hamlet-99845.herokuapp.com/tasks/${props.data.place}`,
+          `https://frozen-hamlet-99845.herokuapp.com/tasks/${props.data.place}`,
           bodyparameter,
           config
         )
