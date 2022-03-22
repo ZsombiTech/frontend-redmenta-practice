@@ -5,3 +5,7 @@
 .hoverdiv:hover {
   background-color: rgb(123, 123, 253);
 }
+
+.onerow {
+  display: flex;
+}

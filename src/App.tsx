@@ -10,6 +10,7 @@ function App() {
   const [datas, setDatas] = useState<Array<string>>();
   const [token, setToken] = useState<string>();
   const [submitted, setSubmitted] = useState<boolean>(false);
+  const [refresh, setRefresh] = useState<boolean>(false);
   const [gansw, setGansw] = useState<number>(0);
 
   useEffect(() => {
@@ -49,10 +50,16 @@ function App() {
             token={token}
             setGansw={setGansw}
             gansw={gansw}
+            refresh={refresh}
           />
         ))}
-      {datas && !submitted && (
-        <Submitbutton setSubmitted={setSubmitted} submitted={submitted} />
+
+      {datas && (
+        <Submitbutton
+          setSubmitted={setSubmitted}
+          submitted={submitted}
+          setRefresh={setRefresh}
+        />
       )}
     </div>
   );

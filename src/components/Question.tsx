@@ -15,6 +15,7 @@ function Question(props: any) {
           token={props.token}
           setGansw={props.setGansw}
           gansw={props.gansw}
+          refresh={props.refresh}
         />
       </div>
     </Fragment>

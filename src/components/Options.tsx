@@ -39,6 +39,15 @@ function Options(props: any) {
           console.log(error);
         });
     }
+
+    if (!props.submitted) {
+      window.scrollTo(0, 0);
+      props.setGansw(0);
+      setClicked(false);
+      setClicked2(false);
+      setClicked3(false);
+      setClicked4(false);
+    }
   }, [props.submitted]);
 
   function settrue(): void {
